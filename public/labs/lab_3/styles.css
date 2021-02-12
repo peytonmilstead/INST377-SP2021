@@ -1,7 +1,3 @@
-/* Add some css styles based on the tutorial at javascript.info: introduction to browser events
- https://javascript.info/introduction-browser-events */
-
- 
   .arrow {
     border: none;
     color:#444;
@@ -21,7 +17,6 @@
     background: #ccc;
     cursor: pointer;
   }
-
   
   ul {
     height: 130px;
@@ -30,14 +25,15 @@
     padding: 0;
     list-style: none;
     font-size: 0;
+    transform: translateX();
   }
   
   ul img {
     width: 130px;
     height: 130px;
-    display: block; /* removes extra space near images */
+    display: block;
   }
   
   ul li {
-    display: inline-block; /* removes extra space between list items
+    display: inline-block;
   }
