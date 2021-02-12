@@ -1,7 +1,7 @@
 /* Put your javascript in here */
 
 function arrayMethod() {
-  const images = document.querySelectorAll('li');
+  const images = document.querySelectorAll('.carousel_pic');
   const imageArray = Array.from(images);
 
   const listContainer = document.createElement('ul');
