@@ -11,5 +11,5 @@ function arrayMethod() {
 
 function moveCarousel(){
     document.addEventListener('click', (event) =>
-    arrayMethod()
+    arrayMethod();
 }
