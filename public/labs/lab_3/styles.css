@@ -1,3 +1,22 @@
+body {
+    width: 70%;
+    min-width: 800px;
+    margin: 0 auto;
+    background-color: #a7c3f7;
+  }
+
+  .carousel_images {
+    display: flex;
+    justify-content: center;
+    }
+
+  .carousel_buttons {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .arrow {
     border: none;
     color:#444;
@@ -6,7 +25,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: auto;
     cursor: pointer;
   }
   .arrow:focus {
@@ -21,7 +40,7 @@
   ul {
     height: 130px;
     width: 9999px;
-    margin: 0;
+    margin: auto;
     padding: 0;
     list-style: none;
     font-size: 0;
@@ -32,8 +51,11 @@
     width: 130px;
     height: 130px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   ul li {
     display: inline-block;
-  }
+    text-align: center;
+}
