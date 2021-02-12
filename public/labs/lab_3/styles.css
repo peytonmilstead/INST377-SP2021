@@ -1,9 +1,17 @@
-body {
-    width: 70%;
-    min-width: 800px;
-    margin: 0 auto;
-    background-color: #a7c3f7;
-  }
+body{
+    margin:40px auto;
+    max-width:950px;
+    line-height:1.6;
+    font-size:18px;
+    color:rgb(107, 159, 238);
+    padding:0 10px
+   }
+
+  .main {
+    background: rgb(194, 243, 179);
+    height: 150px;
+    width: 150px;
+}
 
   .carousel_images {
     display: flex;
