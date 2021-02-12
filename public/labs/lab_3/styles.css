@@ -1,30 +1,31 @@
-body{
+body {
     margin:40px auto;
     max-width:950px;
     line-height:1.6;
     font-size:18px;
-    color:rgb(107, 159, 238);
+    background-color:rgb(123, 173, 248);
     padding:0 10px
-   }
-
-  .main {
-    background: rgb(194, 243, 179);
-    height: 150px;
-    width: 150px;
 }
 
+  .main {
+    background: rgb(229, 247, 245);
+    height: 200px;
+    width: 250px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
   .carousel_images {
     display: flex;
     justify-content: center;
-    }
-
+}
   .carousel_buttons {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 75%;
     transform: translate(-50%, -50%);
-  }
-
+}
   .arrow {
     border: none;
     color:#444;
@@ -39,12 +40,10 @@ body{
   .arrow:focus {
     outline: none;
   }
-  
   .arrow:hover {
     background: #ccc;
     cursor: pointer;
   }
-  
   ul {
     height: 130px;
     width: 9999px;
@@ -54,7 +53,6 @@ body{
     font-size: 0;
     transform: translateX();
   }
-  
   ul img {
     width: 130px;
     height: 130px;
@@ -62,7 +60,6 @@ body{
     margin-left: auto;
     margin-right: auto;
   }
-  
   ul li {
     display: inline-block;
     text-align: center;
