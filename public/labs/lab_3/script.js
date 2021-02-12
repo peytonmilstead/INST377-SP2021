@@ -4,15 +4,15 @@ function arrayMethod() {
   const images = document.querySelectorAll('.carousel_pic');
   const imageArray = Array.from(images);
 
-  const listContainer = document.getElementsByName('ul');
+  const listContainer = document.createElement('ul');
   const target = document.querySelector('#box1');
   target.append(listContainer);
 
   const array2 = imageArray.map((element) => {
-    const listItem = document.getElementsByName('li');
+    const listItem = document.createElement('li');
     listItem.innerText = element;
     listContainer.append(listItem);
-    return typeof element;
+    return element;
   });
   console.log(array2);
 }
