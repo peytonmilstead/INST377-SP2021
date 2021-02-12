@@ -28,7 +28,7 @@ body {
 }
   .arrow {
     border: none;
-    color:#444;
+    color:rgb(15, 13, 13);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -41,7 +41,7 @@ body {
     outline: none;
   }
   .arrow:hover {
-    background: #ccc;
+    background: rgb(20, 2, 104);
     cursor: pointer;
   }
   ul {
