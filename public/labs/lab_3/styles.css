@@ -10,20 +10,17 @@ body {
   .main {
     background: rgb(229, 247, 245);
     height: 200px;
-    width: 250px;
+    width: 275px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-  .carousel_images {
-    display: flex;
-    justify-content: center;
-}
+
   .carousel_buttons {
-    position: absolute;
-    left: 50%;
-    top: 75%;
+    position:relative;
+    left: 75%;
+    top: 100%;
     transform: translate(-50%, -50%);
 }
   .arrow {
@@ -41,7 +38,7 @@ body {
     outline: none;
   }
   .arrow:hover {
-    background: rgb(20, 2, 104);
+    background: rgb(58, 70, 238);
     cursor: pointer;
   }
   ul {
@@ -49,9 +46,7 @@ body {
     width: 9999px;
     margin: auto;
     padding: 0;
-    list-style: none;
     font-size: 0;
-    transform: translateX();
   }
   ul img {
     width: 130px;
@@ -59,6 +54,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transform: translateX();
   }
   ul li {
     display: inline-block;
