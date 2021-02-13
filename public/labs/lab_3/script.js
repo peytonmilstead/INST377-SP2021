@@ -4,14 +4,15 @@ function arrayMethod() {
   const images = document.querySelectorAll('.carousel');
   const imageArray = Array.from(images);
 
+  const listContainer = document.querySelectorAll('ul');
+  const target = document.querySelector('#box1');
+  target.append(listContainer);
+
   const array2 = imageArray.map((element) => {
-    const listItem = document.querySelectorAll('.carousel_pic');
+    const listItem = document.createElement('li');
     listItem.innerText = element;
-    let i = 0;
-    i < listItem.length;
-    i++;
-    array2.push(listItem[i].background);
-    console.log(array2);
+    listContainer.append(listItem);
+    console.log(listContainer);
   });
 
   let currentIndex = -1;
