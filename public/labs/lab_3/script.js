@@ -4,23 +4,22 @@ function arrayMethod() {
   const images = document.querySelectorAll('.carousel');
   const imageArray = Array.from(images);
 
-  const listContainer = document.querySelectorAll('ul');
-  const target = document.querySelector('#box1');
-  target.append(listContainer);
-
   const array2 = imageArray.map((element) => {
     const listItem = document.querySelectorAll('.carousel_pic');
     listItem.innerText = element;
-    listContainer.append(listItem);
+    let i = 0;
+    i < listItem.length;
+    i++;
+    array2.push(listItem[i].background);
+    console.log(array2);
   });
-  console.log(array2);
 
   let currentIndex = -1;
   if (currentIndex >= imageArray.length) {
     currentIndex = 0;
   }
   currentIndex++;
-  document.querySelector('.carousel').style.cssText = `background: ${imageArray[currentIndex]}`;
+  document.querySelectorAll('.carousel').style.cssText = `background: ${imageArray[currentIndex]}`;
 }
 
 function moveCarousel() {
