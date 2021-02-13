@@ -12,7 +12,7 @@ function arrayMethod() {
     const listItem = document.createElement('li');
     listItem.innerText = element;
     listContainer.append(listItem);
-    return element;
+    return typeof element;
   });
   console.log(array2);
 }
