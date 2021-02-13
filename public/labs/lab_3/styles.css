@@ -10,7 +10,7 @@ body {
   .main {
     background: rgb(229, 247, 245);
     height: 200px;
-    width: 275px;
+    width: 390px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -30,7 +30,7 @@ body {
   .carousel_buttons {
     position:relative;
     left: 75%;
-    top: 100%;
+    top: 25%;
     transform: translate(-50%, -50%);
 }
   .arrow {
