@@ -54,7 +54,7 @@ body {
   .flex-outer li p {
     padding: 8px;
     font-weight: 300;
-    letter-spacing: .09em;
+    letter-spacing: 0px;
     text-transform: capitalize;
   }
   
