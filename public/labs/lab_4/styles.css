@@ -1,12 +1,13 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
-    background: #ffe48d;
+    background: #857267;
     color: rgb(3, 2, 2);
     padding: 50px 0;
   }
   h1 {
     font-family: 'Times New Roman', Times, serif;
+    color: white;
     font-size: 32px;
     font-weight: bold;
     text-align: center;
@@ -69,7 +70,7 @@ body {
   
   .flex-outer > li > label + *,
   .flex-inner {
-    flex: 1 0 800px;
+    flex: 1 0 400px;
   }
   
   .flex-outer li p {
@@ -80,6 +81,7 @@ body {
   .flex-outer li textarea {
     padding: 8px;
     border: none;
+    border: 1px solid black;
   }
   
   .flex-outer li button {
