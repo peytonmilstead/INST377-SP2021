@@ -1,20 +1,22 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
-    font-weight: bold;
-    background: #c03648;
-    color: #fff;
+    background: #ffe48d;
+    color: rgb(3, 2, 2);
     padding: 50px 0;
   }
   h1 {
-    font: normal 32px/1.5 "Times New Roman";
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: bold;
     text-align: center;
+    padding-bottom: 50px;
   }
 
   .container {
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
   }
   
   .container * {
@@ -28,8 +30,8 @@ body {
   }
   
   .flex-outer {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: auto;
   }
   
   .flex-outer li,
@@ -45,7 +47,7 @@ body {
   }
   
   .flex-outer > li:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   
   .flex-outer li label,
@@ -59,12 +61,12 @@ body {
   .flex-outer > li > label,
   .flex-outer li p {
     flex: 1 0 120px;
-    max-width: 220px;
+    max-width: 500px;
   }
   
   .flex-outer > li > label + *,
   .flex-inner {
-    flex: 1 0 220px;
+    flex: 1 0 620px;
   }
   
   .flex-outer li p {
@@ -73,7 +75,7 @@ body {
   
   .flex-outer li input:not([type='checkbox']),
   .flex-outer li textarea {
-    padding: 15px;
+    padding: 10px;
     border: none;
   }
   
