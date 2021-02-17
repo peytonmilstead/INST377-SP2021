@@ -1,6 +1,8 @@
 body {
-    font: normal 18px/1.5 "Times New Roman";
-    background: #f0674f;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    background: #c03648;
     color: #fff;
     padding: 50px 0;
   }
@@ -51,7 +53,7 @@ body {
     padding: 8px;
     font-weight: 300;
     letter-spacing: .09em;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
   
   .flex-outer > li > label,
@@ -83,7 +85,7 @@ body {
     color: #000000;
     text-transform: uppercase;
     letter-spacing: .09em;
-    border-radius: 2px;
+    border-radius: 4px;
   }
   
   .flex-inner li {
