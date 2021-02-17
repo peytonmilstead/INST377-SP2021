@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const birdLeft = 220;
   let birdBottom = 100;
-  const gravity = 2;
+  const gravity = 3;
   let isGameOver = false;
   const gap = 430;
 
   function startGame() {
     birdBottom -= gravity;
-    bird.style.bottom = `${birdBottom}px;`;
+    bird.style.bottom = `${birdBottom}px`;
     bird.style.left = `${birdLeft}px`;
   }
   const gameTimerId = setInterval(startGame, 20);
@@ -23,10 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function control(e) {
-    if (e.keycode === 32) {
+    if (e.keyCode === 32) {
       jump();
     }
   }
+
   document.addEventListener('keyup', control);
 
   function generateObstacle() {
@@ -39,13 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
       obstacle.classList.add('obstacle');
       topObstacle.classList.add('topObstacle');
     }
-
     gameDisplay.appendChild(obstacle);
     gameDisplay.appendChild(topObstacle);
     obstacle.style.left = `${obstacleLeft}px`;
     topObstacle.style.left = `${obstacleLeft}px`;
     obstacle.style.bottom = `${obstacleBottom}px`;
-    topObstacle.style.bottom = `${obstacleBottom}px`;
+    topObstacle.style.bottom = `${obstacleBottom + gap}px`;
 
     function moveObstacle() {
       obstacleLeft -= 2;
@@ -58,17 +58,17 @@ document.addEventListener('DOMContentLoaded', () => {
         gameDisplay.removeChild(topObstacle);
       }
       if (
-        ((obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220)
-              && (birdBottom < obstacleBottom + 153 || birdBottom > obstacleBottom + gap - 200))
-              || birdBottom === 0) {
+        obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220
+              && (birdBottom < obstacleBottom + 153 || birdBottom > obstacleBottom + gap - 200)
+              || birdBottom === 0
+      ) {
         gameOver();
         clearInterval(timerId);
       }
     }
-    const timerId = setInterval(moveObstacle, 20);
+    let timerId = setInterval(moveObstacle, 20);
     if (!isGameOver) setTimeout(generateObstacle, 3000);
   }
-
   generateObstacle();
 
   function gameOver() {
