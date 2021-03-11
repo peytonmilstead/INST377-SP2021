@@ -34,7 +34,8 @@ input {
 }
 
 .target-list li {
-    background: linear-gradient(to top,  #9da4ce 0%,#cbe1f7 100%);    margin-left: 680px;
+    background: linear-gradient(to top,  #9da4ce 0%,#cbe1f7 100%);
+    margin-left: 680px;
     margin-top: 20px;
     margin-left: 300px;
     margin-right: 300px;
@@ -43,6 +44,10 @@ input {
     text-transform: uppercase;
     font-family: 'Shippori Mincho', serif;
     line-height: 30px;
+}
+
+.list-header{
+    font-weight: 600;
 }
 
 #mapid {
