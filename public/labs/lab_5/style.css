@@ -3,8 +3,8 @@ html {
 }
 
 input {
-    width: 30%;
-    margin-left: 300px;
+    width: 50%;
+    margin-left: 200px;
     margin-bottom: 20px;
     padding: 10px;
 }
@@ -29,10 +29,9 @@ input {
 
 .target-list li {
     background: linear-gradient(to top,  #6d8aac 0%,#e8f3ff 100%);
-    margin-left: 680px;
     margin-top: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
     padding: 20px;
     box-shadow: 1 1 10px rgba(12, 12, 12, 0.336);
     text-transform: uppercase;
