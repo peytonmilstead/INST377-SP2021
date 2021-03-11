@@ -10,7 +10,7 @@ input {
 }
 
 .title {
-    text-align: center;
+    text-align:center;
     color: rgb(82, 68, 68);
     font-family: 'Roboto Condensed', sans-serif;
     text-decoration: underline;
@@ -23,18 +23,12 @@ input {
     margin-top: 20px;
 }
 
-
-.column-background {
-    background: goldenrod;
-    height: 100px;
-}
-
 .target-list ul {
     margin-left: 680px;
 }
 
 .target-list li {
-    background: linear-gradient(to top,  #9da4ce 0%,#cbe1f7 100%);
+    background: linear-gradient(to top,  #6d8aac 0%,#e8f3ff 100%);
     margin-left: 680px;
     margin-top: 20px;
     margin-left: 300px;
