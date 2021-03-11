@@ -11,14 +11,11 @@ function mapInit() {
     accessToken: 'pk.eyJ1IjoicGV5bWlscyIsImEiOiJja20zeXJuZ3YwN3M1MnZxcHhjMHA3OXFyIn0.5kFrQXzMQVbMwzIMvcLtzQ'
   }).addTo(mymap);
   // mymap.on('click', onMapClick);
-  // const marker = L.marker([39.4, -77.5]).addTo(mymap);
   console.log('mymap', mymap);
   return mymap;
 }
 
 async function dataHandler(mapObjectFromFunction) {
-  // use your assignment 1 data handling code here
-  // and target mapObjectFromFunction to attach markers
   const form = document.querySelector('#search-form');
   const search = document.querySelector('#search');
   const targetList = document.querySelector('.target-list');
@@ -36,6 +33,9 @@ async function dataHandler(mapObjectFromFunction) {
       const longLat = item.geocoded_column_1.coordinates;
       console.log('markerLongLat', longLat[0], longLat[1]);
       const marker = L.marker([longLat[1], longLat[0]]).addTo(mapObjectFromFunction);
+      // panning code:
+      // mymap.panTo([longLat[1], longLat[0]]);
+
 
       const appendItem = document.createElement('li');
       appendItem.classList.add('block');

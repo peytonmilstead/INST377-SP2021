@@ -1,5 +1,5 @@
 html {
-    background: rgb(80, 13, 13);
+    background: rgb(255, 255, 255);
 }
 
 input {
@@ -11,11 +11,18 @@ input {
 
 .title {
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(82, 68, 68);
     font-family: 'Roboto Condensed', sans-serif;
     text-decoration: underline;
     margin-top: 20px;
 }
+.subtitle {
+    text-align: center;
+    color: rgb(82, 68, 68);
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 20px;
+}
+
 
 .column-background {
     background: goldenrod;
@@ -27,7 +34,7 @@ input {
 }
 
 .target-list li {
-    background: linear-gradient(to top,  #ffffff 0%,#b7d8f7 100%);    margin-left: 680px;
+    background: linear-gradient(to top,  #9da4ce 0%,#cbe1f7 100%);    margin-left: 680px;
     margin-top: 20px;
     margin-left: 300px;
     margin-right: 300px;
