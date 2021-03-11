@@ -5,8 +5,10 @@
     <title>Peyton's Lab 5</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet"> 
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/>
@@ -14,22 +16,46 @@
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script> 
 </head>
-<script src="script.js"></script>
-
 <body>
-    <div id="mapid"></div>
-    <div class="container.is-max-desktop">
-        <h1 class="title">Peyton's Lab 5</h1>
+    <div class="columns">
+        <div class="column">
+            <form action="" id="search-form">
+                <label for="search"></label>
+                <input type="text" id="search" name="search">
+            </form>
+            <ul class="target-list">
 
-        <form class="userform" action='/api' method='POST'>
-            <div class="control">
-                <input type="text is-info" class="search is-large" placeholder="Zip Code">
-            </div>
-            <ul class="suggestions">
-                <li>Results</li>
             </ul>
-        </form>   
-
+        </div>
+        <div class="column">
+            <div id="mapid"></div>
+        </div>
     </div>
+    <script src="script.js"></script>
+
+    
+    
+    <!-- <section class="section">
+        <div class="container columns is-max-widescreen">
+            <div class="column info">
+                <h1 class="title">Peyton's Lab 5</h1>
+                <div class="subtitle">Zip Code Restaurant Search</div>
+                <div class="block">
+                    <form class="userform" action='/api' method='POST'>
+                        <input type="text is-info" id="search" class="search is-large" placeholder="Zip Code">
+                        <button>Submit</button>
+
+                    </form>
+                <ul class="suggestions">
+                    <li>Results</li>
+                </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div id="mapid"></div>
+            </div>
+    </div>
+    </section> -->
+    
 </body>
 </html>

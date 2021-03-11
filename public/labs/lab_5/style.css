@@ -4,7 +4,7 @@ html {
 
 input {
     width: 30%;
-    margin-left: 680px;
+    margin-left: 300px;
     margin-bottom: 20px;
     padding: 10px;
 }
@@ -22,11 +22,11 @@ input {
     height: 100px;
 }
 
-.suggestions ul {
+.target-list ul {
     margin-left: 680px;
 }
 
-.suggestions li {
+.target-list li {
     background: linear-gradient(to top,  #ffffff 0%,#b7d8f7 100%);    margin-left: 680px;
     margin-top: 20px;
     margin-left: 300px;
@@ -39,5 +39,5 @@ input {
 }
 
 #mapid {
-    height: 320px; 
+    height: 480px; 
 }
