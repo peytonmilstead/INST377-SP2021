@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function createPlatforms() {
-    for (let i = 0; i < platformCount; i++) {
+    for (const i = 0; i < platformCount; i++) {
       const platGap = 600 / platformCount;
       const newPlatBottom = 100 + i * platGap;
       const newPlatform = new Platform(newPlatBottom);
