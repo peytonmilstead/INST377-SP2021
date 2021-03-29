@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const startPoint = 150;
   const doodlerBottomSpace = startPoint;
   const gravity = 0.9;
-  const upTimerId;
-  const downTimerId;
+  const upTimerId = 0;
+  const downTimerId = 0;
   const isJumping = true;
   const isGoingLeft = false;
   const isGoingRight = false;
-  const leftTimerId;
-  const rightTimerId;
+  const leftTimerId = 0;
+  const rightTimerId = 0;
 
   class Platform {
     constructor(newPlatBottom) {
