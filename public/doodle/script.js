@@ -1,27 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid');
   const doodler = document.createElement('div');
-  const isGameOver = false;
+  let isGameOver = false;
   const speed = 3;
   const platformCount = 5;
   const platforms = [];
-  const score = 0;
-  const doodlerLeftSpace = 50;
-  const startPoint = 150;
-  const doodlerBottomSpace = startPoint;
+  let score = 0;
+  let doodlerLeftSpace = 50;
+  let startPoint = 150;
+  let doodlerBottomSpace = startPoint;
   const gravity = 0.9;
-  const upTimerId = 0;
-  const downTimerId = 0;
-  const isJumping = true;
-  const isGoingLeft = false;
-  const isGoingRight = false;
-  const leftTimerId = 0;
-  const rightTimerId = 0;
+  let upTimerId;
+  let downTimerId;
+  let isJumping = true;
+  let isGoingLeft = false;
+  let isGoingRight = false;
+  let leftTimerId;
+  let rightTimerId;
 
   class Platform {
     constructor(newPlatBottom) {
-      this.left = Math.random() * 315;
       this.bottom = newPlatBottom;
+      this.left = Math.random() * 315;
       this.visual = document.createElement('div');
 
       const {visual} = this;
@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function createPlatforms() {
-    for (const i = 0; i < platformCount; i++) {
-      const platGap = 600 / platformCount;
-      const newPlatBottom = 100 + i * platGap;
+    for (let i = 0; i < platformCount; i++) {
+      const platformGap = 600 / platformCount;
+      const newPlatBottom = 100 + i * platformGap;
       const newPlatform = new Platform(newPlatBottom);
       platforms.push(newPlatform);
       console.log(platforms);
@@ -177,8 +177,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function start() {
     if (!isGameOver) {
-      createPlatforms();
       createDoodler();
+      createPlatforms();
+      movePlatforms();
       setInterval(movePlatforms, 30);
       jump(startPoint);
       document.addEventListener('keyup', control);
