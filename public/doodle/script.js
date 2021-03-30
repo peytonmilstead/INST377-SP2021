@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid');
   const doodler = document.createElement('div');
   let isGameOver = false;
-  const speed = 3;
+  // const speed = 3;
   const platformCount = 5;
   const platforms = [];
   let score = 0;
   let doodlerLeftSpace = 50;
   let startPoint = 150;
   let doodlerBottomSpace = startPoint;
-  const gravity = 0.9;
+  // const gravity = 0.9;
   let upTimerId;
   let downTimerId;
   let isJumping = true;
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function createPlatforms() {
-    for (let i = 0; i < platformCount; i++) {
+    for (let i = 0; i < platformCount; i += 1) {
       const platformGap = 600 / platformCount;
       const newPlatBottom = 100 + i * platformGap;
       const newPlatform = new Platform(newPlatBottom);
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
           firstPlatform.classList.remove('platform');
           platforms.shift();
           console.log(platforms);
-          score++;
+          score += 1;
           const newPlatform = new Platform(600);
           platforms.push(newPlatform);
         }
@@ -177,8 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function start() {
     if (!isGameOver) {
-      createDoodler();
       createPlatforms();
+      createDoodler();
       movePlatforms();
       setInterval(movePlatforms, 30);
       jump(startPoint);
